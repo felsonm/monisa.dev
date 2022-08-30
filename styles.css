@@ -1,0 +1,9 @@
+section {
+    height: 500px;
+    background-color: #FCF8E8;
+    border: solid black 1px; 
+}
+
+.hero {
+    background-image: url("images/vladimir-riabinin-diMBLU4FzDQ-unsplash.jpg") ;
+}
