@@ -1,9 +1,36 @@
-section {
-    height: 500px;
-    background-color: #FCF8E8;
-    border: solid black 1px; 
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Lato', sans-serif;
+
 }
 
-.hero {
-    background-image: url("images/vladimir-riabinin-diMBLU4FzDQ-unsplash.jpg") ;
+.background-image {
+    background-image: url('images/annie-spratt-RFMHesohDXE-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.centered_subtitle {
+    position: absolute;
+    top: 58%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: large;
 }
