@@ -1,49 +1,86 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    font: 18px 'Alumni Sans Pinstripe', sans-serif;
     color: white;
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
-    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: url('images/eberhard-grossgasteiger-VSeVhmW4_JQ-unsplash.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+
+.profile-card {
+    box-shadow: 0 18px 200px -60px black;
+    border-radius: 50px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.profile-card__img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
+    color: white;
+    align-items: center;
+
+}
+
+.profile-card__desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
 
 }
 
 p {
-    color: white;
+    font-size: 1.4rem;
 }
 
-.background-image {
-    background-image: url('images/annie-spratt-RFMHesohDXE-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
+.profile-card__info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-transform: uppercase;
     text-align: center;
-    color: black;
+    color: white;
+
+    @media screen (max-width(576px)) {
+        gap: 30px;
+    }
 }
 
-.centered {
-    font-size: 4rem;
-    position: absolute;
-    top: 19%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/* NAVBAR */
 
-.centered_subtitle {
-    font-size: 2rem;
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    transform: translate(-50%, -50%);
 
-}
 
-.navbar {
-    font-size: 1.5rem;
-    left: 89%;
-    position: absolute;
-
-}
+/* INTRO */
 
 .big-text {
     position: absolute;
@@ -52,11 +89,11 @@ p {
     transform: translate(-50%, -30%);
     font-size: 11rem;
     font-family: "Lobster", cursive;
-    color: black;
+    color: white;
 }
 
 .intro {
-    background: black;
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -68,7 +105,7 @@ p {
 }
 
 .slider {
-    background: black;
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -84,7 +121,7 @@ p {
 }
 
 .hide {
-    background: black;
+    background: white;
     overflow: hidden;
 }
 
@@ -97,10 +134,5 @@ h2 {
     color: black;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     margin: 40px;
-
-}
-
-.headshot {
-    border-radius: 50px;
 
 }
