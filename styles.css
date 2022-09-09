@@ -1,6 +1,14 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;;
+}
+
 body {
-    font: 18px 'Alumni Sans Pinstripe', sans-serif;
-    color: white;
+    font: 15px 'Alumni Sans Pinstripe', sans-serif;
+    width: 100%;
+    height: 100vh;
+    color: black;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -9,7 +17,7 @@ body {
     position: fixed;
     inset: 0;
     z-index: -1;
-    pointer-events: none;
+    background-color: #ffc107;
     background: url('images/eberhard-grossgasteiger-VSeVhmW4_JQ-unsplash.jpg') no-repeat;
     background-size: cover;
 }
@@ -22,13 +30,13 @@ body {
     position: relative;
     backdrop-filter: blur(15px);
     border: 2px solid white;
-    padding: 3rem 3rem;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 40px;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #374844;
 }
 
 .profile-card__img {
@@ -48,13 +56,33 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     color: white;
 
 }
 
+.profile-card__actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: #ffc107;
+   
+
+}
+
+.button {
+    font-size: 15px;
+    min-width: 250px;
+    border-radius: 50px;
+    color: #ffc107;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+
 h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: bold;
 
 }
@@ -66,7 +94,7 @@ p {
 .profile-card__info {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -76,10 +104,6 @@ p {
     }
 }
 
-/* NAVBAR */
-
-
-
 /* INTRO */
 
 .big-text {
@@ -88,12 +112,12 @@ p {
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 11rem;
-    font-family: "Lobster", cursive;
+    font-family: 'Alumni Sans Pinstripe, sans-serif';
     color: white;
 }
 
 .intro {
-    background: white;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -105,7 +129,7 @@ p {
 }
 
 .slider {
-    background: white;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -115,13 +139,13 @@ p {
 }
 
 .intro-text {
-    color: black;
+    color: white;
     font-family: "Heebo", sans-serif;
     font-size: 11rem;
 }
 
 .hide {
-    background: white;
+    background: black;
     overflow: hidden;
 }
 
@@ -134,5 +158,118 @@ h2 {
     color: black;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     margin: 40px;
+    font-size: 3rem;
 
+}
+
+
+/* Contact Form */
+
+.container-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+
+}
+
+.container-contact:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: url('images/eberhard-grossgasteiger-VSeVhmW4_JQ-unsplash.jpg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+
+}
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px;
+
+}
+
+.left{
+    height: 100%;
+    background: url('images/eberhard-grossgasteiger-VSeVhmW4_JQ-unsplash.jpg') no-repeat center;
+    background-size: cover;
+
+}
+
+.right {
+    padding: 25px 40px;
+
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #374844;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.field:focus{
+    background-color: white;
+    border: 2px solid rgba(1, 21, 1);
+
+}
+
+.area {
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ffc107;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: black;
+    transition: .3s;
+
+}
+
+@media screen and (max-width:880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        height: 200px;
+    }
 }
