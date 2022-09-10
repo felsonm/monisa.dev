@@ -116,6 +116,7 @@
     "serve-static": "^1.13.2",
     "server-destroy": "^1.0.1",
     "setprototypeof": "^1.2.0",
+    "slider-pro": "^1.6.0",
     "socket.io": "^4.5.1",
     "socket.io-adapter": "^2.4.0",
     "socket.io-client": "^4.5.1",

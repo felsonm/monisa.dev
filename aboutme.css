@@ -1,0 +1,14 @@
+*{
+    background-color: #374844;
+    color: white;
+}
+
+.hero-area {
+    display: flex;
+    height: 337px;
+    width: 300px;
+    object-fit: contain;
+    
+}
+
+  
