@@ -416,6 +416,11 @@ form textarea{
     font-size: 24px;
     font-weight: 600;
     margin: 15px 0;
+    align-items: center;
+}
+
+.navbar-icons {
+    display: flex;
 }
 
 
