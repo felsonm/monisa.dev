@@ -64,7 +64,6 @@ header {
 .navbar a:hover {
     background: var(--main-color);
     color: var(--text-color)
-
 }
 
 #menu-icon {
@@ -94,7 +93,7 @@ section {
 
 }
 
-.home-text h1{
+.home-text h1 {
     margin: 20px 0;
     font-size: var(--h1-font);
     font-weight: bold;
@@ -150,26 +149,26 @@ header.sticky {
 
 }
 
-.about{
+.about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
 }
 
-.about-text h4{
+.about-text h4 {
     margin: 10px 0;
     color: var(--main-color);
     font-size: 20px;
     font-weight: 600;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: var(--h2-font);
 
 }
 
-.about-text p{
+.about-text p {
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 30px;
@@ -190,7 +189,7 @@ header.sticky {
     font-weight: 600;
 }
 
-.about-img img{
+.about-img img {
     height: auto;
     width: 100%;
     max-width: 460px;
@@ -238,7 +237,7 @@ header.sticky {
     transition: all .40s ease;
 }
 
-.box p{
+.box p {
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 30px;
@@ -250,7 +249,7 @@ header.sticky {
 
 }
 
-.box:hover h3{
+.box:hover h3 {
     color: var(--main-color);
 }
 
@@ -292,7 +291,7 @@ header.sticky {
 
 }
 
-.row h3{
+.row h3 {
     font-size: 25px;
     font-weight: 700;
 
@@ -306,7 +305,7 @@ header.sticky {
 }
 
 .contact {
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
@@ -320,7 +319,7 @@ header.sticky {
 
 }
 
-.contact-text h2{
+.contact-text h2 {
     font-size: var(--h2-font);
 }
 
@@ -331,7 +330,7 @@ header.sticky {
     margin-bottom: 2rem;
 }
 
-.contact-list{
+.contact-list {
     margin-bottom: 3rem;
 
 }
@@ -339,10 +338,10 @@ header.sticky {
 .contact-list li {
     margin-bottom: 10px;
     display: block;
-    
+
 }
 
-.contact-list li a{
+.contact-list li a {
     display: block;
     color: var(--second-color);
     font-weight: 600;
@@ -354,7 +353,7 @@ header.sticky {
 
 }
 
-.contact-icons i{
+.contact-icons i {
     height: 40px;
     width: 40px;
     background: #12141c;
@@ -377,11 +376,11 @@ header.sticky {
 
 .contact-form form {
     position: relative;
-    
+
 }
 
 .contact-form form input,
-form textarea{
+form textarea {
     border: none;
     outline: none;
     width: 100%;
@@ -400,7 +399,7 @@ form textarea{
 
 }
 
-.contact-form form .send{
+.contact-form form .send {
     display: inline-block;
     font-size: 17px;
     font-weight: 500;
@@ -423,4 +422,79 @@ form textarea{
     display: flex;
 }
 
+@media (max-width: 1325px) {
 
+    header {
+        padding: 16px 3%;
+    }
+
+    header.sticky {
+        padding: 8px 3%;
+    }
+
+    section {
+        padding: 130px 3% 60px;
+    }
+
+}
+
+@media (max-width: 970px) {
+    :root {
+        --h1-font: 4.2rem;
+        --h2-font: 2.9rem;
+        --p-font: 1rem;
+    }
+
+    section {
+        padding: 70px 3% 60px;
+    }
+
+    .home {
+        height: 85vh;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 830px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #12141c;
+        ;
+        text-align: left;
+        transition: all .40s ease;
+
+    }
+
+    .navbar a {
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    :root {
+        --h1-font: 3.7rem;
+        --h2-font: 2.7rem;
+    }
+
+
+}
