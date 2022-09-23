@@ -16,3 +16,14 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
+const sr= ScrollReveal ({
+    distance: '25px',
+    durantion: 2500,
+    reset: true
+
+})
+
+sr.reveal('.home-text', {delay:190, origin:'bottom'})
+
+sr.reveal('.about, .services, .portifolio, .contact', {delay:200, origin:'bottom'})
