@@ -45,6 +45,7 @@ header {
 
 .navbar {
     display: flex;
+    
 }
 
 .navbar a {
@@ -477,21 +478,21 @@ form textarea {
     }
 
     .navbar {
-        top: -600px;
-        left: 0;
+        top: 60px;
+        left: 10px;
         right: 0;
-        display: flex;
+        display: flexbox;
         flex-direction: column;
-        background: #12141c;
+        background: transparent;
         ;
-        text-align: left;
+        text-align: right;
         transition: all .40s ease;
 
     }
 
     .navbar a {
-        padding: 1rem;
-        margin: 1rem;
+        padding: 1px;
+        margin: 1px;
     }
 
     .navbar.active {
@@ -499,8 +500,8 @@ form textarea {
     }
 
     :root {
-        --h1-font: 3.7rem;
-        --h2-font: 2.7rem;
+        --h1-font: 1.7rem;
+        --h2-font: 1.7rem;
     }
 
 
