@@ -45,7 +45,7 @@ header {
 
 .navbar {
     display: flex;
-    
+
 }
 
 .navbar a {
@@ -333,7 +333,7 @@ header.sticky {
 }
 
 .contact-text p {
-    color: var(--second-color);
+    color: white;
     font-size: var(--p-font);
     line-height: 30px;
     margin-bottom: 2rem;
@@ -379,7 +379,7 @@ header.sticky {
 
 .contact-icons i:hover {
     transform: scale(1.01) translateY(-5px);
-    color: var(--text-color);
+    color: black;
     background: var(--main-color);
 }
 
@@ -420,6 +420,8 @@ form textarea {
     transition: all .40s ease;
 
 }
+
+
 
 .iconskills {
     font-size: 24px;
@@ -519,3 +521,6 @@ form textarea {
 
 }
 
+::-webkit-input-placeholder {
+    color: black;
+}
